@@ -1,24 +1,25 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <header className="flex justify-around items-center fixed pt-8 pin-t pin-x">
       <div className="flex items-center">
         <span className="fab fa-node-js fa-2x mr-4 " />
-        <a href="#" className="no-underline text-black">
+        <Link to="/" className="no-underline text-black">
           Aries Cryptocurrency API
-        </a>
+        </Link>
       </div>
       <nav>
-        <a href="#" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
+        <Link to="/quickstart" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
           Quickstart
-        </a>
-        <a href="#" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
+        </Link>
+        <Link to="/docs" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
           Documentation
-        </a>
-        <a href="#" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
+        </Link>
+        <Link to="/faq" className="no-underline text-black m-8 hover:text-purple-dark hover:font-bold">
           FAQ
-        </a>
+        </Link>
       </nav>
       <div className="inline-block relative">
         <select className="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-1 pr-8 rounded leading-tight">
